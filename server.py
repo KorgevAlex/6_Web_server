@@ -65,16 +65,6 @@ Connection: close
 
 def response(msg,msg1):
     try:
-#         if msg1 == '/index.html':
-#             with open('temp/' + msg1[1:]) as file:
-#                 htm = file.read()
-#             resp = f"""HTTP/1.1 200 OK
-# Server: SelfMadeServer v0.0.1
-# Content-type: image/png
-# Content-Length: {y}
-# Connection: close
-#
-# """.encode() + x
         with open('temp/' + msg1[1:]) as file:
             htm = file.read()
         resp = ("""HTTP/1.1 200 OK
@@ -82,8 +72,7 @@ Server: SelfMadeServer v0.0.1
 Content-type: text/html
 Connection: close
 """+htm).encode()
-#         print('msg', msg)
-#         print('msg1', msg1)
+
     except:
         resp = resp = f"""{error404header}
 Server: SelfMadeServer v0.0.1
