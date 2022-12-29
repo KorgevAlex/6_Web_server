@@ -1,0 +1,4 @@
+80
+/Users/bismark/PycharmProjects/pythonProject1
+8192
+html jpeg png gif
